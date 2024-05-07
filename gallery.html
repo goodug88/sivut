@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <h1>Gallery:</h1>
+    <p>images i have taken with a camera or from the internet.</p>
+    <p>This gallery will not contain anything else than images, all my music (if i ever come up with it) will be i the <a href="">music</a> section</p>
+        <section id="gallery">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Myself</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="idfk"><img style="height: 300px;" src="photos/me/1.png">
+                    <img style="height: 300px;" src="photos/me/2.png">
+                    <img style="height: 300px;" src="photos/me/3.png">
+                    <img style="height: 300px;" src="photos/me/4.png">
+                   <img style="height: 300px;" src="photos/me/5.png">
+                    <img style="height: 300px;" src="photos/me/6.png">
+                    <img style="height: 300px;" src="photos/me/7.png">
+                    <img style="height: 300px;" src="photos/me/8.png"></div> 
+                </div>
+              </div>
+              
+              <script>
+              /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+              </script>
+        </section>
+    </main>
+
+</body>
+</html>
